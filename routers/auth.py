@@ -32,6 +32,7 @@ oauth2_bearer = OAuth2PasswordBearer(tokenUrl="token")
 
 router = APIRouter(
     prefix="/auth",
+    # prefix="",
     tags=["auth"],
     responses={401: {"user": "Not authorized"}}
 )
